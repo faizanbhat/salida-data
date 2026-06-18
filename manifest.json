@@ -1,0 +1,119 @@
+{
+  "manifestVersion": 1,
+  "generatedAt": "2026-06-18T03:53:15+00:00",
+  "minAppVersion": "0.1.0",
+  "bundles": {
+    "core": {
+      "version": "2026-06-18",
+      "size": 15937536,
+      "sha256": "240f4eb46bf01f1b28a3c735bcf86e8b6bdcc19e8558350460c2902b5dfa330d",
+      "url": "https://github.com/faizanbhat/salida/releases/download/data-core-2026-06-18/core.sqlite",
+      "format": "sqlite",
+      "required": true,
+      "title": "Core data",
+      "subtitle": "Everything needed to run the app — cities, visas, costs, flights, advisories."
+    },
+    "pois": {
+      "version": "2026-06-18",
+      "size": 49623040,
+      "sha256": "2a8d2da817de508d53f06c0ee1733834a70a2ff986e43d585f933d063d0562fe",
+      "url": "https://github.com/faizanbhat/salida/releases/download/data-pois-2026-06-18/pois.sqlite",
+      "format": "sqlite",
+      "required": false,
+      "title": "Attractions",
+      "subtitle": "Per-city points of interest with names, descriptions, and coordinates from Wikivoyage \"See\" and \"Do\" listings. Powers the per-city attractions list. (The off-the-beaten-path filter and the attractions map mode use a separate count baked into the core bundle, so they work without this.)"
+    }
+  },
+  "datasets": {
+    "cities": {
+      "label": "City catalogue",
+      "subtitle": "21,589 cities with population, country, music tier, and a short description.",
+      "bundle": "core",
+      "source": {
+        "label": "Wikivoyage + Wikidata",
+        "url": "https://en.wikivoyage.org/",
+        "license": "CC BY-SA 3.0 / CC0"
+      }
+    },
+    "pois": {
+      "label": "Attractions",
+      "subtitle": "Per-city points of interest with names, descriptions, and coordinates from Wikivoyage \"See\" and \"Do\" listings.",
+      "bundle": "pois",
+      "source": {
+        "label": "Wikivoyage",
+        "url": "https://en.wikivoyage.org/",
+        "license": "CC BY-SA 3.0"
+      }
+    },
+    "passport": {
+      "label": "Visa requirements",
+      "subtitle": "Bilateral visa matrix for 199 passport / destination pairs.",
+      "bundle": "core",
+      "source": {
+        "label": "imorte/passport-index-data",
+        "url": "https://github.com/imorte/passport-index-data",
+        "license": "Creative Commons BY-NC-SA"
+      }
+    },
+    "schengen": {
+      "label": "Schengen Area",
+      "subtitle": "Schengen member states and the 90/180 stay rule.",
+      "bundle": "core",
+      "source": {
+        "label": "EU Schengen Acquis",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area_en",
+        "license": "Public domain"
+      }
+    },
+    "cost_of_living": {
+      "label": "Cost of living",
+      "subtitle": "Numbeo index by city, NYC = 100. Powers the Cost map mode and affordability badges.",
+      "bundle": "core",
+      "source": {
+        "label": "Numbeo",
+        "url": "https://www.numbeo.com/cost-of-living/",
+        "license": "Numbeo Terms of Use"
+      }
+    },
+    "direct_flights": {
+      "label": "Direct flights",
+      "subtitle": "Non-stop route adjacency from OpenFlights — powers the \"Direct flights from anchor\" filter.",
+      "bundle": "core",
+      "source": {
+        "label": "OpenFlights",
+        "url": "https://openflights.org/data.html",
+        "license": "ODbL"
+      }
+    },
+    "ra_urls": {
+      "label": "Resident Advisor events",
+      "subtitle": "City → Resident Advisor area mapping. Powers the events sheet on city pages.",
+      "bundle": "core",
+      "source": {
+        "label": "Resident Advisor",
+        "url": "https://ra.co/",
+        "license": "Public observable URLs"
+      }
+    },
+    "fcdo_slugs": {
+      "label": "UK FCDO travel advice",
+      "subtitle": "ISO → FCDO URL slug map; lets the advisory card link to gov.uk per country.",
+      "bundle": "core",
+      "source": {
+        "label": "UK Foreign, Commonwealth & Development Office",
+        "url": "https://www.gov.uk/foreign-travel-advice",
+        "license": "Open Government Licence v3.0"
+      }
+    },
+    "weather": {
+      "label": "Weather",
+      "subtitle": "Current conditions and 7-day forecast for every city, fetched live (no bundle to install).",
+      "bundle": null,
+      "source": {
+        "label": "Open-Meteo",
+        "url": "https://open-meteo.com/",
+        "license": "CC BY 4.0"
+      }
+    }
+  }
+}
