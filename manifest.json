@@ -1,13 +1,13 @@
 {
   "manifestVersion": 1,
-  "generatedAt": "2026-06-18T03:53:15+00:00",
+  "generatedAt": "2026-06-18T04:53:51+00:00",
   "minAppVersion": "0.1.0",
   "bundles": {
     "core": {
       "version": "2026-06-18",
       "size": 15937536,
       "sha256": "240f4eb46bf01f1b28a3c735bcf86e8b6bdcc19e8558350460c2902b5dfa330d",
-      "url": "https://github.com/faizanbhat/salida/releases/download/data-core-2026-06-18/core.sqlite",
+      "url": "https://github.com/faizanbhat/salida-data/releases/download/data-core-2026-06-18/core.sqlite",
       "format": "sqlite",
       "required": true,
       "title": "Core data",
@@ -17,7 +17,7 @@
       "version": "2026-06-18",
       "size": 49623040,
       "sha256": "2a8d2da817de508d53f06c0ee1733834a70a2ff986e43d585f933d063d0562fe",
-      "url": "https://github.com/faizanbhat/salida/releases/download/data-pois-2026-06-18/pois.sqlite",
+      "url": "https://github.com/faizanbhat/salida-data/releases/download/data-pois-2026-06-18/pois.sqlite",
       "format": "sqlite",
       "required": false,
       "title": "Attractions",
